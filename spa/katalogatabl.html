@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SPA Сервис</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-xl  navbar-light teal lighten-4" >
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ">
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li></li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> -->
+
+
+<li class="nav-item">
+        <a class="nav-link disabled" href="#" style="padding-right: 450px;"></a>
+      </li> 
+
+      <li class="nav-item" style="">
+        <a class="nav-link" href="#">О компании</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Доставка</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Оплата</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Полезная информация</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Прайс-лист</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Карта сайта</a>
+      </li >
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li> -->
+      <li class="nav-item dropdown" style="margin-left: 200px;"><!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light- teal darken-1" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Вход</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Регистрация</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput11">Пароль</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-default">Авторизироваться <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <!-- <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p> -->
+                <p><a href="#" class="blue-text">Забыли пароль?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Закрыть</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12"> Email</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Пароль</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Повторите пароль</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-default">Зарегистрироваться <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <!-- <p class="pt-1">У вас уже есть аккаунт? <a href="#" class="blue-text">Авторизироваться</a></p> -->
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+<div class="text-center">
+  <a href="" class=" teal lighten-4 btn-md" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user " style="margin-top: 10px;" ></i> </a>
+</div>
+        <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" > -->
+          <!-- <i class="fas fa-user"  ></i></a> -->
+        <!-- <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+          <a class="dropdown-item" href="#">My account</a>
+          <a class="dropdown-item" href="#">Log out</a>
+        </div> -->
+      </li>
+    </ul>
+  </div>
+</nav>
+	<div class="conteiner">
+		<div class="row">
+			<div class="col-xl-2">
+				<a href="#"><img id="logo" src="img/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-xl-2"><p id="logotext">Торгово-производственная компания. Одноразовые принадлежности и расходные материалы.</p></div>
+			<div class="col-xl-2">
+				<a><img id="zakazzvon" src="" alt="">
+<!-- Здесь модальное окно заказать звонок сверху -->
+
+
+<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" style="min-width: 22%;"  role="document">
+    <div class="modal-content">
+      <div class=" text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-right: 5px;margin-top: 5px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <br>
+        <h4 class="modal-title w-100 font-weight-bold">Заказать звонок</h4>
+        <br>
+        
+      </div>
+  <div class=" text-center">
+    <h5 style="font-size: 14px;">Заполните форму и мы перезвоним вам в течение <br>5 минут</h5>
+  </div>
+      <div class="modal-body mx-3">
+        <!-- <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i> -->
+          <input type="text" id="form3" class="form-control validate" placeholder="Имя">
+          <label data-error="wrong" data-success="right" for="form3"></label>
+        <!-- </div> -->
+
+        <!-- <div class="md-form mb-4"> -->
+         <!--  <i class="fas fa-envelope prefix grey-text"></i> -->
+          <input type="email" id="form2" class="form-control validate" placeholder="Телефон">
+          <label data-error="wrong" data-success="right" for="form2"></label>
+        <!-- </div> -->
+
+      </div>
+
+      
+      <div class=" d-flex justify-content-center">
+        <button class="btn btn-default " style="border-radius: 50px; width: 75%;">Оставить заявку <i class="fas fa-paper-plane-o ml-1"></i></button>
+      </div>
+            
+<!-- Material checked -->
+<div class="form-check" style="margin-left: 10px; margin-bottom: 20px;margin-top: 15px;">
+  <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+  <label class="form-check-label" for="materialChecked2">Я согласен на обработку своих персональных данных(ознакомиться)</label>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <a href="" class=" text-white btn- teal lighten-3 btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm"><img src="img/zakazzvon.png" alt=""></a>
+</div>
+
+
+
+
+<!-- Здесь модальное окно заказать звонок сверху -->
+
+        </a>
+			</div>
+			<div class="col-xl-2"><p id="logotext">По России звонок бесплатно<br><b class="nomertel">8 (495) 224-72-82</b></p></div>
+			<div class="col-xl-2"><p id="logotext">Ежедневно с 8:00 до 21:00<br><b class="nomertel">8 (495) 228-77-88</b></p></div>
+			<div class="col-xl-2">
+				<img id="trash" src="img/trash.png" alt="trash">
+
+			</div>
+		</div>
+		
+	</div>
+<span class="d-block p-2 bg-default text-white" >
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 tkatalogtov" ><span><b>КАТАЛОГ ТОВАРОВ</b></span></div>
+			<div class="col-xl-9">
+									<!-- Search form -->
+					<form class="form-inline active-cyan-4" style="width: 125%;">
+					  <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Более 3200 товаров"
+					    aria-label="Search">
+					  <i class="fas fa-search" aria-hidden="true"></i>
+					</form>
+			</div>
+		</div>
+	</div>
+</span>
+<!--Navbar -->
+<!-- <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         -->
+     <!--  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li> -->
+     <!--  <li class="nav-item dropdown" style="margin-left: 32%;">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"><b>КАТАЛОГ ТОВАРОВ<b>
+        </a>
+        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#">Новинки</a>
+          <a class="dropdown-item" href="#">Распродажа</a> -->
+          <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+        <!-- </div>
+
+      </li>
+       
+		    </ul>
+     
+  </div>
+</nav> -->
+
+<!-- <div class="panelleft">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="card">
+				  <div class="card-body">
+				    <a href=""><p style="color:#00695c;">Новинки</p></a>
+				    <a href=""><p style="color:#00695c;">Распродажа</p></a><hr>
+				    <a href=""><p>Одноразовые тапочки</p></a>
+				    <a href=""><p>Косметика для гостиниц</p></a>
+				    <a href=""><p>Принадлежности и аксессуары в номера</p></a>
+				    <a href=""><p>Текстильные изделия</p></a>
+				    <a href=""><p>Товары для саун</p></a>
+				    <a href=""><p>Расходные материалы для салонов</p></a>
+				    <a href=""><p>Бумажные изделия</p></a>
+				    <a href=""><p>Салфетки одноразовые</p></a>
+				    <a href=""><p>Одноразовые простыни</p></a>
+				    <a href=""><p>Простыни полиэтиленовые</p></a>
+				    <a href=""><p>Шапочки полиэтиленовые</p></a>
+				    <a href=""><p>Маски для лица</p></a>
+				    <a href=""><p>Медицинские шапочки</p></a>
+				    <a href=""><p>Бахилы полиэтиленовые</p></a>
+				    <a href=""><p>Бахилы носочки для боулинга</p></a>
+				    <a href=""><p>Гель для УЗИ</p></a>
+				    <a href=""><p>Дезинфицирующие средства</p></a>
+				    <a href=""><p>Пакеты для стерилизации</p></a>
+				    <a href=""><p>Массажное масло</p></a>
+				    <a href=""><p>Перчатки медицинские</p></a>
+				    <a href=""><p>Медицинская одежда и белье</p></a>
+				    <a href=""><p>Косметичка прозрачная</p></a>
+				    <a href=""><p>Наборы в дорогу</p></a>
+				  </div>
+		  		</div>
+		  		</div>
+		  </div>
+		</div>
+</div>
+ -->
+<!-- <br> -->
+<!--Carousel Wrapper-->
+
+
+	<div class="container" >
+		<div class="row ">
+			<div class="col-md-3 "><div id="slider">
+								<div class="card">
+				  <div class="card-body">
+				    <a href=""><p style="color:#00695c;">Новинки</p></a>
+				    <a href=""><p style="color:#00695c;">Распродажа</p></a><hr>
+				    <a href=""><p>Одноразовые тапочки</p></a>
+				    <a href=""><p>Косметика для гостиниц</p></a>
+				    <a href=""><p>Принадлежности и аксессуары в номера</p></a>
+				    <a href=""><p>Текстильные изделия</p></a>
+				    <a href=""><p>Товары для саун</p></a>
+				    <a href=""><p>Расходные материалы для салонов</p></a>
+				    <a href=""><p>Бумажные изделия</p></a>
+				    <a href=""><p>Салфетки одноразовые</p></a>
+				    <a href=""><p>Одноразовые простыни</p></a>
+				    <a href=""><p>Простыни полиэтиленовые</p></a>
+				    <a href=""><p>Шапочки полиэтиленовые</p></a>
+				    <a href=""><p>Маски для лица</p></a>
+				    <a href=""><p>Медицинские шапочки</p></a>
+				    <a href=""><p>Бахилы полиэтиленовые</p></a>
+				    <a href=""><p>Бахилы носочки для боулинга</p></a>
+				    <a href=""><p>Гель для УЗИ</p></a>
+				    <a href=""><p>Дезинфицирующие средства</p></a>
+				    <a href=""><p>Пакеты для стерилизации</p></a>
+				    <a href=""><p>Массажное масло</p></a>
+				    <a href=""><p>Перчатки медицинские</p></a>
+				    <a href=""><p>Медицинская одежда и белье</p></a>
+				    <a href=""><p>Косметичка прозрачная</p></a>
+				    <a href=""><p>Наборы в дорогу</p></a>
+            		
+				  </div>
+
+		  		</div>
+<img src="img/picleft1.png" alt="" style="margin-top: 40px; margin-bottom: 20px;">
+<img src="img/picleft2.png" alt="" style="margin-top: 20px; margin-bottom: 20px;">
+			</div>
+
+			</div>
+
+				<div class="col-md-9">
+				<p><br><u><a href="index.html" style="color:#00695c;">Главная</a></u> --> Косметика для гостиниц --> Косметика линейки Hotel</p>
+				<div class="row">
+					<div class="col-md-2" ><a href="#"><img src="img/31.png" alt=""></a></div>
+					<div class="col-md-2" style="margin-left: 75px;"><a href="#"><img src="img/32.png" alt=""></a></div>
+					<div class="col-md-2" style="margin-left: 75px;"><a href="#"><img src="img/33.png" alt=""></a></div>
+					<div class="col-md-2" style="margin-left: 75px;"><a href="#"><img src="img/34.png" alt=""></a></div>
+				</div>
+
+				<h2><b>Косметика линейки Hotel</b></h2>
+				<hr>
+				<p>Сортировать <a href="#" style="color:blue;">по значению</a></p>
+				<hr>
+				<div class="row">
+						<div >
+						<!-- Default button -->
+						<button type="button" class="btn btn-default btn-sm " style="padding: 10px !important;" >Показать всю линейку</button>
+
+					</div>
+						<div >
+						<button type="button" class="btn btn-default btn-sm" style="padding: 10px !important;">Шампуни</button>
+						</div>
+						<div >
+						<button type="button" class="btn btn-default btn-sm" style="padding: 10px !important;">Зубные наборы</button>
+						</div>
+						<div >
+						<button type="button" class="btn btn-default btn-sm" style="padding: 10px !important;">Бритвенные наборы</button>
+						</div>
+						<div >
+						<button type="button" class="btn btn-default btn-sm" style="padding: 10px !important;">Гели для душа</button>
+						</div>
+						<div style="margin-top: 13px !important; margin-left:  10px !important;">
+						<a href="#" style="color: blue; "><u>Показать еще</u></a>
+						</div>
+						<div >
+						
+				</div>
+
+</div>
+						<div class="container">
+						<div class="row" style="border: 3px solid #e0e0e0;
+												  padding: 10px;
+												  margin-bottom: 5px;
+												  max-width: 900px;
+												  margin-left: 5px;
+												  margin-top: 10px;">
+							<div class="col-md-4" ><img src="img/21.png" alt="" style="max-width: 50px; max-height: 50px;"></div>
+							<div class="col-md-4">
+								<h5>Гель для душа</h5>
+								<p>Арктикул: 1212313</p>
+								<p><b>упаковка ?</b></p>
+							</div>
+							<div class="col-md-1">
+								<p>от<b>450</b> руб.</p>
+							</div>
+							<div class="col-md-2"><u>Купить в 1 клик</u></div>
+							<div class="col-md-2"><button type="button" class="btn btn-default btn-md">Купить</button></div>
+						</div>
+					</div>
+
+
+
+<br>
+<nav aria-label="Page navigation example" style="padding-left: 350px;padding-top: 20px;">
+  <ul class="pagination pg-teal">
+    <li class="page-item ">
+      <a class="page-link" tabindex="-1">Пред</a>
+    </li>
+    <li class="page-item"><a class="page-link">1</a></li>
+    <li class="page-item active">
+      <a class="page-link">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link">3</a></li>
+    <li class="page-item">
+      <a class="page-link">След</a>
+    </li>
+  </ul>
+</nav>
+
+					</div>
+							<p class="text-dark poptov" ><b>С этими товарами покупают</b></p>
+					<div class="card-deck">
+
+
+
+<!-- Крутая карусель карточек -->
+<!--Carousel Wrapper-->
+<div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top" style="text-align: right;">
+    <a class="btn-floating" href="#multi-item-example2" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example2" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <!-- <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol> -->
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+                                          <div class="container"><div class="row">
+      <div class="col-md-4">
+
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/blackhat.png"
+            alt="Card image cap">
+          <div class="card-body">
+           <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+            <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+            <h4 class="card-price">от <b class="cprice">450</b> руб. упаковка</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/bluetap.png"
+            alt="Card image cap">
+          <div class="card-body">
+           <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+            <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+            <h4 class="card-price">от <b class="cprice">45</b> руб. пара</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/polotence.png"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+            <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+            <h4 class="card-price">от <b class="cprice">4</b> руб. рулон</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+                                     </div></div>
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+                             <div class="container"><div class="row">             
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/blackhat.png">
+          <div class="card-body">
+           <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+            <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+            <h4 class="card-price">от <b class="cprice">450</b> руб. упаковка</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/bluetap.png">
+          <div class="card-body">
+            <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+            <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+            <h4 class="card-price">от <b class="cprice">45</b> руб. пара</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/polotence.png">
+          <div class="card-body">
+            <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+            <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+            <h4 class="card-price">от <b class="cprice">4</b> руб. рулон</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+</div></div>
+    <!--Third slide-->
+    <div class="carousel-item">
+            
+<div class="container"><div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/blackhat.png">
+          <div class="card-body">
+           <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+            <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+            <h4 class="card-price">от <b class="cprice">450</b> руб. упаковка</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/bluetap.png">
+          <div class="card-body">
+            <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+            <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+            <h4 class="card-price">от <b class="cprice">45</b> руб. пара</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="img/polotence.png">
+          <div class="card-body">
+           <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+            <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+            <h4 class="card-price">от <b class="cprice">4</b> руб. рулон</h4>
+            <a class="btn btn-default btn-md">Купить</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+</div></div>
+<br>
+
+
+
+</div></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- Footer -->
+<footer class="page-footer font-small    pt-4" style="background-color: #72a9a5; ">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left" >
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Сервис</h5>
+        <a href=""><p>Получить прайс-лист</p></a>
+        <a href=""><p>Как сделать заказ</p></a>
+        <a href=""><p>Способы оплаты</p></a>
+        <a href=""><p>Доставка и оплата</p></a>
+        <a href=""><p>Способы оплаты</p></a>
+        <a href=""><p>Политика конфиденциальности</p></a>
+        <a href="contacts.html"><p>Контакты</p></a>
+		
+
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Каталог</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">Одноразовые тапочки</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">Косметика для гостиниц</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">Расходные материалы для салонов</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">Текстиль</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">Товары для бани</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">Прозрачная косметика</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">Дорожный набор</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4"> Мы в соцсетях</h5>
+<!--Facebook-->
+<a class="fb-ic mr-3" role="button"><i class="fab fa-lg fa-facebook-f"> Facebook</i></a><br><br>
+        <!--Instagram-->
+<a class="ins-ic mr-3" role="button"><i class="fab fa-lg fa-instagram"> Instagram</i></a><br><br>
+      <!--Vkontakte-->
+<a class="vk-ic mr-3" role="button"><i class="fab fa-lg fa-vk"></i> Вконтакте</a>  <br><br>
+<!--Twitter-->
+<a class="tw-ic mr-3" role="button"><i class="fab fa-lg fa-twitter"> Твиттер</i></a><br>
+      </div>
+      <!-- Grid column -->
+
+<hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Контакты</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> Магазин работает с 9:00 до 19:00 г.Санкт-Петербург, ул. Королева д.18</p>
+          </li>
+          
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> Ежедневно: с 8:00 до 21:00 <br>+7 (495) 288-77-88</p>
+          </li>
+          <li>
+            <p>
+              <a href=""> </p>
+
+  <!-- Здесь Заказать звонок в подвале
+ -->
+
+
+<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" style="min-width: 22%;"  role="document">
+    <div class="modal-content">
+      <div class=" text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-right: 5px;margin-top: 5px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <br>
+        <h4 class="modal-title w-100 font-weight-bold">Заказать звонок</h4>
+        <br>
+        
+      </div>
+  <div class=" text-center">
+    <h5 style="font-size: 14px;">Заполните форму и мы перезвоним вам в течение <br>5 минут</h5>
+  </div>
+      <div class="modal-body mx-3">
+        <!-- <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i> -->
+          <input type="text" id="form3" class="form-control validate" placeholder="Имя">
+          <label data-error="wrong" data-success="right" for="form3"></label>
+        <!-- </div> -->
+
+        <!-- <div class="md-form mb-4"> -->
+         <!--  <i class="fas fa-envelope prefix grey-text"></i> -->
+          <input type="email" id="form2" class="form-control validate" placeholder="Телефон">
+          <label data-error="wrong" data-success="right" for="form2"></label>
+        <!-- </div> -->
+
+      </div>
+
+      
+      <div class=" d-flex justify-content-center">
+        <button class="btn btn-default " style="border-radius: 50px; width: 75%;">Оставить заявку <i class="fas fa-paper-plane-o ml-1"></i></button>
+      </div>
+            
+<!-- Material checked -->
+<div class="form-check" style="margin-left: 10px; margin-bottom: 20px;margin-top: 15px;">
+  <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+  <label class="form-check-label" for="materialChecked2">Я согласен на обработку своих персональных данных(<a href="">ознакомиться</a>)</label>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <a href="" class=" text-white btn- teal lighten-3 btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm"><img src="img/zakazzvon2.png" alt=""></a>
+</div>
+
+
+
+
+
+
+
+<!-- Здесь заказать звонок в подвале -->
+
+
+
+
+              </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-">© 2010-2019 | SPA Сервис: 
+          
+            <strong class="text-center text-md-right"> Любое копирование информации не для нашего промо запрещены без письменного соглашения </strong>
+          </a>
+        </p>
+
+      </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start your project here-->
+  <!-- <div style="height: 100vh">
+    <div class="flex-center flex-column">
+
+      <h1 class="text-hide animated fadeIn mb-4"
+        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
+        MDBootstrap</h1>
+      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+
+      <p class="animated fadeIn text-muted">Khabib Team</p>
+    </div>
+  </div> -->
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

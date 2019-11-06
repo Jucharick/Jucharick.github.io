@@ -1,0 +1,52 @@
+body {
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.top-block {
+	background-color:#bdffec;
+}
+
+ a {
+	color:black;
+}
+
+#logotext {
+	padding-top:20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 14px;
+}
+
+#zakazzvon {
+	padding-top: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.nomertel {
+	font-size: 22px;
+}
+
+.pochemyynas {
+	font-size: 28px;
+	text-align: center;
+}
+
+.novinki {
+	font-size: 25px;
+}
+
+.ocompniz {
+	font-size: 35px;
+}
+
+.tkatalogtov {
+	font-size: 20px;
+	text-align: center;
+}
+
+.vhod {
+	margin-top: 15px;
+}
+

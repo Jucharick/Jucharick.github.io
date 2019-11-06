@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SPA Сервис</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/template.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand teal lighten-4" >
+        <div class="container">
+          <div class="city-selection flex">
+            <span class="city-icon"><img src="img/city-marker-icon.png" alt="map marker"></span>
+            <span>Ваш город:</span>
+            <div id="city-popup-btn"><span class="city-name navbar-btn">Москва</span><span class="city-arrow"><img src="img/city-arrow.png"></span></div>
+          </div>
+          <!-- /.city-selection -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">Оплата</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">Полезная информация</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">Прайс-лист</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">Карта сайта</a>
+              </li >
+            </ul>
+            <!-- .navbar-nav -->
+            <div class="gamburger-menu gamburger-nav"></div>
+          </div>
+          <!-- /.collapse navbar-collapse --> 
+          <a href="" class=" teal lighten-4 btn-md enter-profile flex" data-toggle="modal" data-target="#modalLRForm">
+            <div class="enter-profile-block">
+              <span class="profile-icon"><img src="img/profile-icon.png" alt="profile-icon"></span>
+              <span class="navbar-btn">Войти</span>
+              <span class="profile-name"></span>
+            </div>
+          </a>
+          <!-- /.enter-profile -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- navbar navbar-expand-xl  navbar-light teal lighten-4 -->
+      <div class="header-info-block container flex">
+        <a href="index.html" class="logo-block flex"><img id="logo" src="img/logo.png" alt="logo"></a>
+        <div class="header-logo-text">Торгово-производственная компания. Одноразовые принадлежности и расходные материалы.</div>
+          <div class="call-btn-block flex">
+              <a href="javascript:void(0);" class="call-btn" data-toggle="modal" data-target="#modalSubscriptionForm">
+                Заказать звонок
+              </a>
+          </div>
+          <!-- call-btn-block -->
+        <div class="header-phone-blocks">
+          <a href="tel:84952247282" class="header-phone-block flex"><span class="header-phone-text">По России звонок бесплатно</span><span class="header-phone">8 (495) 224-72-82</span></a>
+          <a href="tel:84952287788" class="header-phone-block flex"><span class="header-phone-text">Ежедневно с 8:00 до 21:00</span><span class="header-phone">8 (495) 228-77-88</span></a>
+        </div>
+         <!-- /.heder-phone-blocks -->
+        <div class="header-cart-block flex">
+          <img class="cart-img" src="img/cart-icon.png" alt="cart">
+          <div class="header-cart-block-text flex">
+            <div class="cart-val-block"><a href="javascript:void(0);" class="cart-btn">Корзина</a><sup class="cart-val">2</sup></div>
+            <!-- /.cart-val-block -->
+            <div class="cart-summ-block">
+              <span class="summ-text">на сумму</span>
+              <span class="summ-val">5 600</span>
+              <span>руб</span>
+            </div>
+            <!-- /.cart-summ-block -->
+          </div>
+        </div>
+      </div>
+      <!-- /.header-info-block -->
+  </header>
+  <section class="catalog">
+    <div class="catalog-header bg-default flex card">
+      <div class="text-white container">
+        <div class="row">
+          <div class="catalog-header-col col-md-4 col-lg-3 col-xl-3">
+            <div class="catalog-title-block flex">
+              <span class="catalog-title">Каталог товаров</span>
+              <div class="gamburger-menu gamburger-catalog-title"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+            <!-- /.catalog-title-block -->
+          </div>
+          <!-- col-lg-3 col-xl-3 -->
+          <div class="search-col col-md-8 col-lg-9 col-xl-9">
+            <div class="search-form-block flex">
+              <!-- Search form -->
+              <form class="form-inline active-cyan-4">
+                <input class="form-control form-control-md" type="search" placeholder="Более 3200 товаров" aria-label="Search" name="search" id="search">
+                 <button id="search-btn"></button>
+              </form>
+              <div class="stats-icon-blocks flex">
+                <div class="like-icon-block">
+                  <a href="javascript:void(0);" class="like-img-block">
+                    <img src="img/like-icon.png" alt="like icon" class="like-img">
+                  </a>
+                  <span class="like-val">2</span>
+                </div>
+                <!-- /.like-icon-block -->
+                <div class="stat-icon-block">
+                  <a href="javascript:void(0);" class="stat-img-block">
+                    <img src="img/stat-icon.png" alt="stat icon" class="stat-img">
+                  </a>
+                  <span class="stat-val">7</span>
+                </div>
+                <!-- /.stat-icon-block -->
+              </div>
+              <!-- /.stats-icon-blocks -->
+            </div>
+            <!-- search-form-block flex -->
+          </div>
+          <!-- col-lg-9 col-xl-9 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- bg-default text-white -->
+    </div>
+    <!-- /.catalog-header -->
+    <div class="catalog-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3 col-xl-3 left-menu-col">
+              <div id="slider">
+                <div class="card">
+                  <div class="card-body">
+                    <a href="javascript:void(0);" class="title-link">Новинки</a>
+                    <a href="javascript:void(0);" class="title-link">Распродажа</a>
+                    <a href="javascript:void(0);">Одноразовые тапочки</a>
+                    <a href="katalog2.html">Косметика для гостиниц</a>
+                    <a href="javascript:void(0);">Принадлежности и аксессуары в номера</a>
+                    <a href="javascript:void(0);">Текстильные изделия</a>
+                    <a href="javascript:void(0);">Товары для саун</a>
+                    <a href="javascript:void(0);">Расходные материалы для салонов</a>
+                    <a href="javascript:void(0);">Бумажные изделия</a>
+                    <a href="javascript:void(0);">Салфетки одноразовые</a>
+                    <a href="javascript:void(0);">Одноразовые простыни</a>
+                    <a href="javascript:void(0);">Простыни полиэтиленовые</a>
+                    <a href="javascript:void(0);">Шапочки полиэтиленовые</a>
+                    <a href="javascript:void(0);">Маски для лица</a>
+                    <a href="javascript:void(0);">Медицинские шапочки</a>
+                    <a href="javascript:void(0);">Бахилы полиэтиленовые</a>
+                    <a href="javascript:void(0);">Бахилы носочки для боулинга</a>
+                    <a href="javascript:void(0);">Гель для УЗИ</a>
+                    <a href="javascript:void(0);">Дезинфицирующие средства</a>
+                    <a href="javascript:void(0);">Пакеты для стерилизации</a>
+                    <a href="javascript:void(0);">Массажное масло</a>
+                    <a href="javascript:void(0);">Перчатки медицинские</a>
+                    <a href="javascript:void(0);">Медицинская одежда и белье</a>
+                    <a href="javascript:void(0);">Косметичка прозрачная</a>
+                    <a href="javascript:void(0);">Наборы в дорогу</a>
+                  </div>
+                  <!-- card-body -->
+                </div>
+                <!-- card -->
+                <div class="left-menu-img-block">
+                  <img src="img/picleft1.png" alt="">
+                <img src="img/picleft2.png" alt="">
+                </div>
+                <!-- /.left-menu-img-block -->
+              </div>
+              <!-- slider -->
+            </div>
+            <!-- col-lg-3 col-xl-3 -->
+            <div class="col-md-8 col-lg-9 col-xl-9">
+              <div class="genegal-slider-block">
+                <div class="general-slider">
+                  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators START-->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators END-->
+                    <!--Slides START-->
+                    <div class="carousel-inner" role="listbox">
+                      <!--First slide-->
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/general-banner.png"
+                          alt="First slide">
+                      </div>
+                      <!--/First slide-->
+                      <!--Second slide-->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/general-banner2.png"
+                          alt="Second slide">
+                      </div>
+                      <!--/Second slide-->
+                      <!--Third slide-->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/general-banner3.png"
+                          alt="Third slide">
+                      </div>
+                      <!--/Third slide-->
+                    </div>
+                    <!--/.Slides END-->
+                    <!--Controls START-->
+                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                      <!-- <span class="sr-only">Previous</span> -->
+                      <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span> -->
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <!--/.Controls END-->
+                  </div>
+                  <!-- carousel-example -->
+                </div>
+                <!-- /.general-slider -->
+                <div class="genegal-slider-bottom-items">
+                  <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 genegal-slider-bottom-item" ><a href="javascript:void(0);"><img src="img/11.png" alt="" ><span class="genegal-slider-bottom-item-text">Товары для бани и сауны</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 genegal-slider-bottom-item" ><a href="javascript:void(0);"><img src="img/12.png" alt="" ><span class="genegal-slider-bottom-item-text">Косметика для гостиниц</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 genegal-slider-bottom-item" ><a href="javascript:void(0);"><img src="img/13.png" alt="" ><span class="genegal-slider-bottom-item-text">Расходники салонам красоты</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 genegal-slider-bottom-item" ><a href="javascript:void(0);"><img src="img/14.png" alt="" ><span class="genegal-slider-bottom-item-text">Расходники для тату салонов</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 genegal-slider-bottom-item" ><a href="javascript:void(0);"><img src="img/15.png" alt="" ><span class="genegal-slider-bottom-item-text">Рассходники для массаж салонов</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 genegal-slider-bottom-item" ><a href="javascript:void(0);"><img src="img/16.png" alt="" ><span class="genegal-slider-bottom-item-text">Товары для фитнес центров</span></a></div>
+                  </div>
+                  <!-- row -->
+                </div>
+                <!-- /.genegal-slider-bottom-items -->
+              </div>
+              <!-- /.genegar-slider-block -->
+              <div class="novelties slider-carousel-block">
+                <div class="novelties-header slider-carousel-block-header">
+                  <h2>Новинки</h2>
+                </div>
+                <!-- /.novelties-header -->
+                <div class="novelties-carousel slider-carousel">
+                  <!--Carousel Wrapper START-->
+                  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    <!--Controls START-->
+                    <div class="controls-top" style="text-align: right;">
+                      <a class="btn-floating btn-slide-left" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn-floating btn-slide-right" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <!--/.Controls END-->
+                    <!--Slides START-->
+                    <div class="carousel-inner" role="listbox">
+                      <!--First slide START-->
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div><div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/blackhat.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">450</span><span>руб.</span><span>упаковка</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn" href="cardtov.html">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/bluetap.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+                                  <div class="card-price"><span>от</span><span class="cprice">45</span><span>руб.</span><span>пара</span><span class="cprice-info"><span class="title-help">Количество товара Вы всегда можете отредактировать в корзине. Окончательная стоимость товара после обработки заказа менеджером</span></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/polotence.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+                                  <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">4</span><span>руб.</span><span>рулон</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/shampoo.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шампунь во флаконе «Hotel collection»</h4>
+                                  <p class="card-text">Флакон<br>плотность: 30 мл<br>упаковка: 200 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">199</span><span>руб.</span><span>штука</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                          </div>
+                          <!-- row -->
+                        </div>
+                        <!-- container -->
+                      </div>
+                      <!--/.First slide END-->
+
+                      <!--Second slide START-->
+                      <div class="carousel-item">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div><div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/blackhat.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">450</span><span>руб.</span><span>упаковка</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn" href="cardtov.html">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/bluetap.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+                                  <div class="card-price"><span>от</span><span class="cprice">45</span><span>руб.</span><span>пара</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/polotence.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+                                  <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">4</span><span>руб.</span><span>рулон</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/shampoo.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шампунь во флаконе «Hotel collection»</h4>
+                                  <p class="card-text">Флакон<br>плотность: 30 мл<br>упаковка: 200 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">199</span><span>руб.</span><span>штука</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                          </div>
+                          <!-- row -->
+                        </div>
+                        <!-- container -->
+                      </div>
+                      <!--/.Second slide END-->
+
+                      <!--Third slide END-->
+                      <div class="carousel-item">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div><div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/blackhat.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">450</span><span>руб.</span><span>упаковка</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn" href="cardtov.html">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/bluetap.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+                                  <div class="card-price"><span>от</span><span class="cprice">45</span><span>руб.</span><span>пара</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/polotence.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+                                  <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">4</span><span>руб.</span><span>рулон</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/shampoo.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шампунь во флаконе «Hotel collection»</h4>
+                                  <p class="card-text">Флакон<br>плотность: 30 мл<br>упаковка: 200 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">199</span><span>руб.</span><span>штука</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                          </div>
+                          <!-- row -->
+                        </div>
+                        <!-- container -->
+                      </div>
+                      <!--/.Third slide END-->
+                    </div>
+                    <!-- carousel-inner -->
+                    <!--/.Slides-->
+                  </div>
+                  <!--/.Carousel Wrapper END-->
+                </div>
+                <!-- /.novelties-carousel -->
+              </div>
+              <!-- /.novelties slider-carousel-block -->
+              <div class="popular-product slider-carousel-block">
+                <div class="popular-product-header slider-carousel-block-header">
+                  <h2>Популярные товары</h2>
+                </div>
+                <!-- /.popular-product-header -->
+                <div class="popular-product-carousel slider-carousel">
+                  <!--Carousel Wrapper START-->
+                  <div id="multi-item-example-2" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    <!--Controls START-->
+                    <div class="controls-top" style="text-align: right;">
+                      <a class="btn-floating btn-slide-left" href="#multi-item-example-2" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn-floating btn-slide-right" href="#multi-item-example-2" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <!--/.Controls END-->
+                    <!--Slides START-->
+                    <div class="carousel-inner" role="listbox">
+                      <!--First slide START-->
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div><div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/blackhat.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">450</span><span>руб.</span><span>упаковка</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn" href="cardtov.html">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/bluetap.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+                                  <div class="card-price"><span>от</span><span class="cprice">45</span><span>руб.</span><span>пара</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/polotence.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+                                  <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">4</span><span>руб.</span><span>рулон</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/shampoo.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шампунь во флаконе «Hotel collection»</h4>
+                                  <p class="card-text">Флакон<br>плотность: 30 мл<br>упаковка: 200 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">199</span><span>руб.</span><span>штука</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                          </div>
+                          <!-- row -->
+                        </div>
+                        <!-- container -->
+                      </div>
+                      <!--/.First slide END-->
+
+                      <!--Second slide START-->
+                      <div class="carousel-item">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div><div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/blackhat.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">450</span><span>руб.</span><span>упаковка</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn" href="cardtov.html">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/bluetap.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+                                  <div class="card-price"><span>от</span><span class="cprice">45</span><span>руб.</span><span>пара</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/polotence.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+                                  <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">4</span><span>руб.</span><span>рулон</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/shampoo.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шампунь во флаконе «Hotel collection»</h4>
+                                  <p class="card-text">Флакон<br>плотность: 30 мл<br>упаковка: 200 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">199</span><span>руб.</span><span>штука</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                          </div>
+                          <!-- row -->
+                        </div>
+                        <!-- container -->
+                      </div>
+                      <!--/.Second slide END-->
+
+                      <!--Third slide END-->
+                      <div class="carousel-item">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div><div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/blackhat.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шапочка "Шарлотта" чёрная</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">450</span><span>руб.</span><span>упаковка</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn" href="cardtov.html">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/bluetap.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Тапочки эконом открытый мыс</h4>
+                                  <p class="card-text">материал: Спанбонд<br>плотность: 4 мм<br>упаковка: 25 пар</p></p>
+                                  <div class="card-price"><span>от</span><span class="cprice">45</span><span>руб.</span><span>пара</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/polotence.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Простыня в рулоне 70*200 см</h4>
+                                  <p class="card-text">материал: Спанбо<br>плотность: 12 гр/м<br>упаковка: 100 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">4</span><span>руб.</span><span>рулон</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                            <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                              <div class="card mb-2">
+                                <div class="card-header">
+                                  <div class="card-like"></div>
+                                  <div class="card-hit active">хит продаж</div>
+                                </div>
+                                <div class="card-img-top-block">
+                                  <img class="card-img-top" src="img/shampoo.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Шампунь во флаконе «Hotel collection»</h4>
+                                  <p class="card-text">Флакон<br>плотность: 30 мл<br>упаковка: 200 штук</p>
+                                  <div class="card-price"><span>от</span><span class="cprice">199</span><span>руб.</span><span>штука</span><span class="cprice-info" title="пока можете указать любое описание"></span></div>
+                                  <a class="btn btn-default btn-md cprice-btn">Купить</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-lg-3 col-xl-3 -->
+                          </div>
+                          <!-- row -->
+                        </div>
+                        <!-- container -->
+                      </div>
+                      <!--/.Third slide END-->
+                    </div>
+                    <!-- carousel-inner -->
+                    <!--/.Slides-->
+                  </div>
+                  <!--/.Carousel Wrapper END-->
+                </div>
+                <!-- /.popular-product-carousel -->
+              </div>
+              <!-- /.popular-product  -->
+              <div class="wy-we container">
+                <div class="row">
+                  <h2>Почему стоит покупать у нас?</h2>
+                  <div class="col-xl-2 wy-we-block flex">
+                    <div class="wy-we-block-img"><img src="img/wy-we-block-img1.png" alt=""></div>
+                    <!-- /.wy-we-block-img -->
+                    <div class="wy-we-block-text">
+                      <div class="wy-we-block-title">Прямые поставки от производителя</div>
+                      <!-- /.wy-we-block-title -->
+                      <div class="wy-we-block-subtitle">Наличие продукции на складе</div>
+                      <!-- /.wy-we-block-subtitle -->
+                    </div>
+                  </div>
+                  <!-- /.col-xl-2 wy-we-block flex -->
+                  <div class="col-xl-2 wy-we-block flex">
+                    <div class="wy-we-block-img"><img src="img/wy-we-block-img2.png" alt=""></div>
+                    <!-- /.wy-we-block-img -->
+                    <div class="wy-we-block-text">
+                      <div class="wy-we-block-title">Индивидуальный  дизайн</div>
+                      <!-- /.wy-we-block-title -->
+                      <div class="wy-we-block-subtitle">Нанесение Вашего логотипа на одноразовые тапочки и косметическую продукцию</div>
+                      <!-- /.wy-we-block-subtitle -->
+                    </div>
+                  </div>
+                  <!-- /.col-xl-2 wy-we-block flex -->
+                  <div class="col-xl-2 wy-we-block flex">
+                    <div class="wy-we-block-img"><img src="img/wy-we-block-img3.png" alt=""></div>
+                    <!-- /.wy-we-block-img -->
+                    <div class="wy-we-block-text">
+                      <div class="wy-we-block-title">Выгодные цены</div>
+                      <!-- /.wy-we-block-title -->
+                      <div class="wy-we-block-subtitle">Ниже чем в остальных магазинах на 20%</div>
+                      <!-- /.wy-we-block-subtitle -->
+                    </div>
+                  </div>
+                  <!-- /.col-xl-2 wy-we-block flex -->
+                  <div class="col-xl-2 wy-we-block flex">
+                    <div class="wy-we-block-img"><img src="img/wy-we-block-img4.png" alt=""></div>
+                    <!-- /.wy-we-block-img -->
+                    <div class="wy-we-block-text">
+                      <div class="wy-we-block-title">Бесплатная доставка по городу</div>
+                      <!-- /.wy-we-block-title -->
+                      <div class="wy-we-block-subtitle">И до транспортной компании</div>
+                      <!-- /.wy-we-block-subtitle -->
+                    </div>
+                  </div>
+                  <!-- /.col-xl-2 wy-we-block flex -->
+                  <div class="col-xl-2 wy-we-block flex">
+                    <div class="wy-we-block-img"><img src="img/wy-we-block-img5.png" alt=""></div>
+                    <!-- /.wy-we-block-img -->
+                    <div class="wy-we-block-text">
+                      <div class="wy-we-block-title">Прием заявок  7 дней в неделю</div>
+                      <!-- /.wy-we-block-title -->
+                      <div class="wy-we-block-subtitle">Доставка товара  6 дней в неделю</div>
+                      <!-- /.wy-we-block-subtitle -->
+                    </div>
+                  </div>
+                  <!-- /.col-xl-2 wy-we-block flex -->
+                </div>
+              </div>
+              <!-- wy-we container -->
+              <div class="about-us container">
+                <div class="row">
+                  <div class="col-lg-3 col-xl-3">
+                    <div class="about-us-img">
+                      <img src="img/dev.png" alt="">
+                    </div>
+                  </div>
+                  <!-- col-lg-3 col-xl-3 -->
+                  <div class="col-lg-9 col-xl-9">
+                    <div class="about-us-text">
+                      <h2>О компании</h2>
+                      <p>Все наши производственные помещения соответсвуют техническим и санитарным нормам, предъявляемым для предприятиф легкой промышленности. Все материалы, для производства одноразовых изделий, поступают на производство в заводской упаковке, не подвергаясь возможному постороннему загрязнению, и вскрываются непосредственно при установке в размоточные устройства оборудования. Планы производства корректируются так, чтобы исключалось хранение вскрытых материалов в производственных участках.</p>
+                      <p>Мы производим в большом размерном и цветовом ассортименте: - одноразовые простыни и коврики, одноразовые полотенца и салфетки, также изготавливаем одноразовые швейные изделия, такие как:- халаты, пеньюары, женские бикини и бюстье, мужские шорты для процедур, чулки для прессотерапии, тапочки процедурные и тапочки трансформеры для солярия, тапочки махровые VIP для отелей и саун.</p>
+                    </div>
+                  </div>
+                  <!-- col-lg-9 col-xl-9 -->
+                </div>
+                <!-- row -->
+              </div>
+              <!-- about-us container -->
+            </div>
+            <!-- col-lg-9 col-xl-9 col-sm-12 -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- /.catalog-body -->
+  </section>
+  <!-- /.catalog -->
+  <footer class="page-footer font-small">
+    <div class="container text-center text-md-left" >
+      <div class="row">
+        <div class="footer-servis-menu footer-accordion col-sm-4 col-md-3 col-lg-3 col-xl-3">
+          <h5 class="font-weight-bold text-uppercase mb-4">Сервис</h5>
+          <a href="javascript:void(0);" class="servis-menu-item" data-toggle="modal" data-target="#modalRegisterForm">Получить прайс-лист</a>
+          <a href="javascript:void(0);" class="servis-menu-item">Как сделать заказ</a>
+          <a href="javascript:void(0);" class="servis-menu-item">Способы оплаты</a>
+          <a href="javascript:void(0);" class="servis-menu-item">Доставка и оплата</a>
+          <a href="javascript:void(0);" class="servis-menu-item">Способы оплаты</a>
+          <a href="javascript:void(0);" class="servis-menu-item">Политика конфиденциальности</a>
+          <a href="contacts.html" class="servis-menu-item">Контакты</a>
+        </div>
+        <!-- servis-menu col-md-4 col-lg-3 col-xl-3 -->
+        <div class="footer-catalog-menu footer-accordion col-sm-4 col-md-3 col-lg-3 col-xl-3">
+          <h5 class="font-weight-bold text-uppercase mb-4">Каталог</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="javascript:void(0);">Одноразовые тапочки</a>
+            </li>
+            <li>
+              <a href="katalog2.html">Косметика для гостиниц</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Расходные материалы для салонов</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Текстиль</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Товары для бани</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Прозрачная косметика</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Дорожный набор</a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer-catalog-menu col-md-4 col-lg-2 col-xl-2 -->
+        <div class="footer-social-network-menu footer-accordion col-sm-4 col-md-3 col-lg-3 col-xl-3">
+          <h5 class="font-weight-bold text-uppercase mb-4">Мы в соцсетях</h5>
+          <a class="vk-ic social-network-menu-item" role="button"><i class="fab fa-lg fa-vk"></i>Вконтакте</a>
+          <a class="fb-ic social-network-menu-item" role="button"><i class="fab fa-lg fa-facebook-f"></i>Facebook</a>
+          <a class="ins-ic social-network-menu-item" role="button"><i class="fab fa-lg fa-instagram"></i>Instagram</a>
+          <a class="tw-ic social-network-menu-item" role="button"><i class="fab fa-lg fa-twitter"></i>Твиттер</a>
+          <a class="od-ic social-network-menu-item" role="button"><i class="fab fa-lg fa-odnoklassniki"></i>Одноклассники</a>
+        </div>
+        <!-- footer-catalog-menu col-md-3 col-6 col-sm-6 col-lg-3 col-xl-3 -->
+        <div class="footer-contacts col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          <h5 class="font-weight-bold text-uppercase mb-4">Контакты</h5>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-home mr-3"></i>
+              <span>Магазин работает с 9:00 до 19:00</span>
+              <address>г.Санкт-Петербург, ул. Королева д.18</address>
+            </li>
+            <li>
+                <i class="fas fa-phone mr-3"></i><span>Ежедневно: с 8:00 до 21:00</span>
+                <a href="tel:84952287788" class="footer-tel-number">+7 (495) 288-77-88</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="call-btn text-white" data-toggle="modal" data-target="#modalSubscriptionForm">Заказать звонок
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer-contacts col-md-4 col-6 col-sm-6 col-lg-3 col-xl-3 -->
+      </div>
+      <!-- Grid row -->
+      <hr>
+        <div class="copyright row align-items-center justify-content-between">
+          <div class="copyright-title d-flex d-lg-block col-lg-3 col-xl-3">© 2010-2019 | SPA ССЕРВИС:</div>
+          <div class="copyright-text d-flex d-lg-block col-lg-9 col-xl-9 text-right">Любое копирование информации не для нашего промо запрещены без письменного соглашения</div>
+        </div>
+        <!-- rowalign-items-center -->
+    </div>
+    <!-- container text-center text-md-left -->
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <!--Modal: Login / Register Form START -->
+  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light- teal darken-1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                Вход</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                Регистрация</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Пароль</label>
+                </div>
+                <div class="text-center mt-2">
+                  <button class="btn btn-default">Авторизироваться <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p><a href="javascript:void(0);" class="blue-text">Забыли пароль?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Закрыть</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12"> Email</label>
+                </div>
+
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Пароль</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Повторите пароль</label>
+                </div>
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-default">Зарегистрироваться <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: Login / Register Form END -->
+
+  <!-- Здесь модальное окно заказать звонок сверху START-->
+  <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" style="min-width: 22%;"  role="document">
+      <div class="modal-content">
+        <div class=" text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-right: 5px;margin-top: 5px;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <br>
+          <h4 class="modal-title w-100 font-weight-bold">Заказать звонок</h4>
+          <br>
+        </div>
+        <div class=" text-center">
+          <h5 style="font-size: 14px;">Заполните форму и мы перезвоним вам в течение <br>5 минут</h5>
+        </div>
+        <div class="modal-body mx-3">
+          <input type="text" id="form3" class="form-control validate" placeholder="Имя">
+          <label data-error="wrong" data-success="right" for="form3"></label>
+          <input type="email" id="form2" class="form-control validate" placeholder="Телефон">
+          <label data-error="wrong" data-success="right" for="form2"></label>
+        </div>
+        <!-- modal-body mx-3 -->
+        <div class=" d-flex justify-content-center">
+          <button class="btn btn-default " style="border-radius: 50px; width: 75%;">Оставить заявку <i class="fas fa-paper-plane-o ml-1"></i></button>
+        </div>
+        <!-- Material checked -->
+        <div class="form-check" style="margin-left: 10px; margin-bottom: 20px;margin-top: 15px;">
+          <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+          <label class="form-check-label" for="materialChecked2">Я согласен на обработку своих персональных данных(ознакомиться)</label>
+        </div>
+      </div>
+      <!-- modal-content -->
+    </div>
+    <!-- modal-dialog modal-sm -->
+  </div>
+  <!-- #modalSubscriptionForm -->
+  <!-- Здесь модальное окно заказать звонок сверху END-->
+
+  <!-- Модальное окно price START-->
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document" style="min-width: 360px;">
+      <div class="modal-content">
+        <div class=" text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-right: 10px; margin-top: 5px;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <br>
+          <h4 class="modal-title w-100 font-weight-bold">Получить прайс-лист </h4><br>
+          <h6 style="text-align: center;">Чтобы получить прайс-лист, <br> заполните форму</h6>
+          
+        </div>
+        <div class="modal-body mx-3">
+          <div class="">
+            <!-- <i class="fas fa-user prefix grey-text"></i> -->
+            <input type="email" id="orangeForm-name" class="form-control validate" placeholder="Адрес эл.почты">
+            <label data-error="wrong" data-success="right" for="orangeForm-name"></label>
+          </div>
+          <div class="">
+            <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
+            <input type="text" id="orangeForm-email" class="form-control validate" placeholder="Телефон">
+            <label data-error="wrong" data-success="right" for="orangeForm-email"></label>
+          </div>
+
+          <div class="">
+            <!-- <i class="fas fa-lock prefix grey-text"></i> -->
+            <input type="text" id="orangeForm-pass" class="form-control validate" placeholder="Вид деятельности">
+            <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+          </div>
+
+        </div>
+        <div class=" d-flex justify-content-center">
+          <button class="btn btn-default" style="border-radius: 45px; min-width: 280px;">Получить</button>
+        </div>
+                <div class="form-check" style="margin-left: 10px; margin-bottom: 20px;margin-top: 15px;">
+                          <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+                            <label class="form-check-label" for="materialChecked2">Я согласен на обработку своих персональных данных(<a href="">ознакомиться</a>)</label>
+                        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="" >
+    <a href="" class="   " data-toggle="modal" data-target="#modalRegisterForm" style="color:white; background-color: #72a9a5;">Получить прайс-лист</a>
+  </div> -->
+  <!--Модальное окно price START -->
+</body>
+
+</html>
