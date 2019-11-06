@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div id="slider1">
+		<div class="elem"></div>
+		<button class="prev">prev</button>
+		<button class="next">next</button>
+	</div>
+	
+	<div id="slider2">
+		<div class="elem"></div>
+		<button class="prev">prev</button>
+		<button class="next">next</button>
+	</div>
+	
+	<script>
+				
+		initSlider(['text 1', 'text 2', 'text 3'], '#slider1');
+		initSlider(['text 4', 'text 5', 'text 6'], '#slider2');
+		
+		function initSlider(texts, selector) {
+			var parent = document.querySelector(selector);
+			
+			var elem = parent.querySelector('.elem');
+			var prev = parent.querySelector('.prev');
+			var next = parent.querySelector('.next');
+			
+			var i = 0;
+			elem.innerHTML = texts[i];
+
+			next.addEventListener('click', function () {
+				i++;
+				if (i == texts.length) {
+					i = 0;
+				}
+				elem.innerHTML = texts[i];
+			});
+
+			prev.addEventListener('click', function () {
+				i--;
+				if (i == -1) {
+					i = texts.length - 1;
+				}
+				elem.innerHTML = texts[i];
+			});
+		}
+		
+		
+		/* таймер
+		var i = 1;
+		elem.innerHTML = texts[0];
+		window.setInterval (function() {
+			elem.innerHTML = texts[i];
+			i++;
+			
+			if (i == texts.length) {
+				i = 0;
+			}
+		}, 1000);
+		*/
+		
+		
+	</script>
+	
+</body>
+</html>
