@@ -1,0 +1,100 @@
+.block-adv {
+	height: 100px;
+	background: #fff;
+	border: 1px solid #eaedef;
+	box-sizing: border-box;
+}
+
+.block-adv .sale {
+	width: 25%;
+	float: left;
+	margin: 0 2%; /*компенсируем -2.23%, заданные block-adv*/ 
+	
+}
+
+.sale-img {
+	width: 80px;
+	height: 80px;
+	background-image: url("../images/sale_img.png");
+	margin: 10px auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.sale-img span {
+	font-size: 12px;
+	color: #fff;
+	font-style: italic;
+	padding-top: 18px;
+	display: block; /* span строчный элемент и для него не срабатывает padding, поэтому мы модифицируем его в блочный элемент*/
+}
+
+.sale-img p {
+	font-size: 18px;
+	color: #fff;
+}
+
+.block-adv .slogan {
+	width: 40%;
+	float: left;
+	margin: 0 2%;
+	text-align: left;
+	min-height: 100px;
+	position: relative;
+}
+
+.block-adv .slogan::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 45px;
+	background: #f5f5f6;
+	position: absolute;
+	right: 10px;
+	top: 27px;
+}
+
+.block-adv .slogan h3 {
+	color: #34404b;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0;
+	padding-top: 18px;
+}
+
+.block-adv .slogan p {
+	color: #495662;
+	font-size: 12px;
+	text-transform: capitalize;
+	margin: 5px;
+}
+
+.block-adv .adv-price {
+	width: 23%; 
+	/* считаем: 2% + 25% + 2% = 29 %
+				2% + 40% + 2% = 44 %
+	100% - 29% - 44% = 27%
+				2% + 23% + 2% = 27 % - ширина последнего блока */
+	min-height: 100px;
+	float: left;
+	margin: 0 2%;
+	color: #ff5912;
+	font-size: 24px;
+	line-height: 100px; /*хитрость для выравнивания по центру по вертикали, так как в данном случае в блоке больше нет элементов*/
+}
+
+.block-adv .adv-price p::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 30px;
+	background-image: url("../images/card_plus.png")
+	
+}
+
+.adv-2 {
+	padding: 20px;
+	line-height: 25px;
+}

@@ -1,0 +1,459 @@
+html, body {
+	margin: 0;
+	box-sizing: border-box;
+	background: #f6f8f9;
+	font-family: Arial, Tahoma, sans-serif;
+	color: #43525d;
+}
+
+p {
+	margin: 0;
+}
+
+h1 {
+
+}
+
+.products-h1 {
+	margin-top: 50px;
+}
+
+h3 {
+	margin: 70px 0 20px 0;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 span {
+	color: #ff7013;
+}
+
+.section-description {
+	text-align: center;
+	font-size: 16px;
+	margin: 20px 0 75px;
+}
+
+/*---------------grid---------------*/
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row {
+	margin: 0;
+}
+
+.row::after {   /*очищаем поток*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.block-170 {
+	width: 14.16666%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-270 {
+	width: 20%; 
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-300 {
+	width: 22.5%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-370 {
+	width: 30.83333%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-570 {
+	width: 47.5%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-670 {
+	width: 58.33333%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-770 {
+	width: 64.16666%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-900 {
+	width: 72.5%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.block-1170 {
+	width: 97.5%;
+	min-height: 38px;
+	float: left;
+	margin: 0 1.25%;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.orange {
+	background: #ff7013;
+}
+
+.white {
+	background: #fff;
+}
+
+.text-orange {
+	color: #ff7013;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.cost {
+	color: #ff7013;
+	font-weight: bold;
+}
+
+/*---------------grid end---------------*/
+
+/*------------slider-on-top------------*/
+.slider-on-top {
+	overflow: hidden;
+	width: 50%;
+
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.slider-on-top h2 {
+	text-transform: uppercase;
+}
+
+.slider-on-top p {
+	margin: 20px 0;
+}
+
+.slider-on-top-bg {
+	min-height: 650px;
+	background-image: url("../images/slider_1.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+
+	/*для выравнивания по центру по гориз и верт можем применить позишн, флекс, маржин*/
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+/*------------goods-card------------*/
+
+.goods-block {
+	margin: 80px 0;
+}
+
+.goods-card {
+	min-height: 350px;
+	background: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+.goods-card img {
+	margin-top: 30px;
+}
+
+.goods-card .goods-name {
+	color: #43525d;
+	margin: 20px 0;
+}
+
+.goods-card .cost {
+	color: #ff7013;
+}
+
+/*------------best-sales------------*/
+
+.best-sales {
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.best-sales img {
+	max-height: 40%;
+}
+
+.best-sales-description {
+	width: 60%;
+}
+
+.best-sales-description h4 {
+	margin-top: 0;
+}
+
+.best-sales-description .stars img {
+	max-width: 100%;
+	position: relative;
+	top: 5px;
+}
+
+.best-sales-description .cost {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+}
+
+/*------------letter------------*/
+
+.letter {
+	background: #fff;
+	margin: 120px 0;
+	min-height: 100px;
+	padding: 20px;
+	line-height: 100px;
+}
+
+.letter span {
+	text-transform: uppercase;
+}
+
+.join-us {
+	padding: 15px 25px;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+}
+
+/*------------divider------------*/
+
+.divider {
+	min-height: 60px;
+	margin: 80px 0 115px 0;
+	line-height: 60px;
+}
+
+.circle {
+	display: inline-block; /*для задания ширины блока*/
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+
+/*-------------mobile 768px-------------*/
+
+@media screen and (max-width:768px){
+    
+	/*обнуление прописывается вверху*/
+    .block-1170,
+    .block-900,
+    .block-770,
+    .block-670,
+    .block-570,
+    .block-370,
+    .block-300,
+    .block-270,
+    .block-170 {
+        width: auto;
+        min-height: auto;
+        float: none;
+        margin: 0;
+    }
+
+	.md-1,
+	.md-2,
+	.md-3,
+	.md-4,
+	.md-6,
+	.md-8,
+	.md-10,
+	.md-12 {
+		float: left;
+		margin: 0 1.25%;
+	}
+
+	.md-1 {  /*(100-1.25*2*12)/12*/
+		width: 5.83333%;
+	}
+
+	.md-2 {  /*(100-1.25*2*6)/6*/
+		width: 14.16666%;
+	}
+
+	.md-3 {  /*(100-1.25*2*4)/4*/
+		width: 22.5%;
+	}
+
+	.md-4 {  /*(100-1.25*2*3)/3*/
+		width: 30.83333%;
+	}
+
+	.md-6 {  /*(100-1.25*2*2)/2*/
+		width: 47.5%;
+	}
+
+	.md-8 {  /* с этим блоком может вместиться только md-4 (100-1.25*2*2)-30.83333%*/
+		width: 64.16666%;
+	}
+
+	.md-10 {  /*(100-1.25*2*2)-14.16666%*/
+		width: 80.83333%;
+	}
+
+	.md-12 {  /*(100-1.25*2*1)/1*/
+		width: 97.5%;
+	}
+
+	.md-center {
+		text-align: center;
+	}
+
+	.md-divider {
+		display: block;
+	}
+
+	.ico-line {
+		margin: 20px 0;
+	}
+
+	.slider-on-top-bg {
+        min-height: 350px;
+    }
+
+    .goods-card {
+    	margin-bottom: 20px;
+    }
+
+    .divider {
+    	margin: 40px 0;
+    }
+
+    .best-sales {
+    	margin-bottom: 20px;
+    }
+		
+	.sidebar-block {
+		margin-bottom: 20px;
+	}
+
+    .goods-catalog {
+    	margin-top: 30px;
+    }
+
+    .single-goods {
+    	padding: 40px 0 30px 0;
+	}
+	
+	.letter {
+		margin: 20px 0;
+	}
+
+	.site-footer {
+    	padding: 30px 0 15px 0;
+    }
+}
+
+@media screen and (max-width:360px){
+    
+	.sl-1,
+	.sl-2,
+	.sl-3,
+	.sl-4,
+	.sl-6,
+	.sl-8,
+	.sl-10,
+	.sl-12 {
+		float: left;
+		margin: 0 1.25%;
+	}
+
+	.sl-1 {  /*(100-1.25*2*12)/12*/
+		width: 5.83333%;
+	}
+
+	.sl-2 {  /*(100-1.25*2*6)/6*/
+		width: 14.16666%;
+	}
+
+	.sl-3 {  /*(100-1.25*2*4)/4*/
+		width: 22.5%;
+	}
+
+	.sl-4 {  /*(100-1.25*2*3)/3*/
+		width: 30.83333%;
+	}
+
+	.sl-6 {  /*(100-1.25*2*2)/2*/
+		width: 47.5%;
+	}
+
+	.sl-8 {  /* с этим блоком может вместиться только md-4 (100-1.25*2*2)-30.83333%*/
+		width: 64.16666%;
+	}
+
+	.sl-10 {  /*(100-1.25*2*2)-14.16666%*/
+		width: 80.83333%;
+	}
+
+	.sl-12 {  /*(100-1.25*2*1)/1*/
+		width: 97.5%;
+	}
+
+}	

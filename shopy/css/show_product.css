@@ -1,0 +1,287 @@
+/*------------------------*/
+
+.goods-block {
+	margin: 80px 0;
+}
+
+.goods-card {
+	min-height: 350px;
+	background: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+.goods-card img {
+	margin-top: 30px;
+}
+
+.goods-card .goods-name {
+	color: #43525d;
+}
+.goods-card .cost {
+	color: #ff7013;
+}
+
+.sidebar-block {
+	width: 97.5%;
+	background: #fff;
+	margin: 0 1.25% 30px 1.25%;
+	padding: 20px 0;
+}
+
+.sidebar-block h3 {
+	color: #ff7013;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.sidebar-block ul li {
+	list-style: none;
+	margin: 20px 0;
+}
+
+.active-square::before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border: 4px solid #ff7013;
+	margin-right: 10px;
+}
+
+.inactive-square::before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right: 10px;
+	background-color: #edf0f2;
+}
+
+.sidebar-block a {
+	color: #43525d;
+	text-decoration: none;
+}
+
+/*------------------double-slider------------------*/
+
+.double-slider {
+	position: relative;
+	min-height: 80px;
+}
+
+.double-slider .line-1 {
+	height: 2px;
+	background: #edf0f2;
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	right: 40px;
+}
+
+.double-slider .line-2 {
+	height: 2px;
+	background: #34404b;
+	position: absolute;
+	top: 60px;
+	left: 85px;
+	right: 60px;
+}
+
+.double-slider .left-dot, .double-slider .right-dot   {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	text-align: center;
+}
+
+.double-slider .dot {
+	width: 12px;
+	height: 12px;
+	background: #34404b;
+	border-radius: 100%;
+	margin: 5px auto;
+}
+
+.double-slider .right-dot {
+	right: 40px;
+	top: 31px;
+}
+
+.double-slider .left-dot {
+	left: 60px;
+	top: 31px;
+}
+
+.slider-from-to {
+	margin: 20px;
+}
+
+.slider-from-to input {
+	width: 50px;
+	margin-left: 10px;
+}
+
+/*------------------single-goods------------------*/
+
+.single-goods {
+	background: #fff;
+	padding: 105px 0 100px 0;
+}
+
+.single-goods::after {   /*очищаем поток*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.single-goods-left {
+	float: left;
+	width: 37.5%; /* margin - 1.25%*/
+	margin: 0 1.25%;
+	text-align: center;
+}
+
+.single-goods-right {
+	float: right;
+	width: 57.5%;
+	margin: 0 1.25%;
+}
+
+.goods-img-max {
+	padding: 20px;
+	min-height: 320px;
+}
+
+.goods-img-max img {
+	max-width: 100%; /*ограничиваем размер изображение размером блока*/
+}
+
+.goods-img-min div {
+	background: #f4f6f8;
+	height: 68px;
+	width: 94px;
+	display: inline-block;
+	line-height: 100px;
+	cursor: pointer;
+}
+
+.goods-img-min img {
+	max-width: 30%;
+}
+
+.goods-img-min div.active {
+	background: #ff5912;
+}
+
+.single-goods-card h1 {
+	text-transform: uppercase;
+	color: #ff5912;
+	font-size: 52px;
+}
+
+.single-goods-card .min-description {
+	font-size: 18px;
+	color:  #3c4751;
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+.single-goods-card .full-description {
+	font-size: 16px;
+	color:  #3c4751;
+	line-height: 30px;
+	margin: 30px 0;
+}
+
+.choose-size {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.choose-size .active {
+	font-weight: bold;
+	color: #ff5912;
+}
+
+.choose-size::after {   /*очищаем поток*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.choose-size .left {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.choose-size .right {
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+.choose-size .right button {
+	background: none;
+	border: none;
+	color:  #3c4751;
+	font-size: 18px;
+}
+
+.choose-size-line {
+	border-bottom: 1px solid #edeff1;
+	min-height: 50px;
+	margin: 30px 0;
+}
+
+.single-goods-price .left {
+	width: 50%;
+	float: left;
+	text-align: left;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 30px;
+	margin-top: 25px;
+}
+
+.single-goods-price .right {
+	width: 50%;
+	float: left;
+	text-align: right;
+	padding-top: 10px;
+}
+
+.single-goods-price .right a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    border-top: 1px dotted #414E71;
+  	width: 110px;
+}
+
+.single-goods-price .right button {
+	background: none;
+	border: none;
+	color:  #3c4751;
+	font-size: 18px;
+	margin: 10px;
+}
+
+.single-goods-price .right button.order-now {
+	background: #ff5912;
+	width: 140px;
+	height: 50px;
+	border-radius: 50px;
+	color:  #fff;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+

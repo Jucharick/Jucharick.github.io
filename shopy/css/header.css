@@ -1,0 +1,97 @@
+/*---------------header---------------*/
+
+.site-header {
+	min-height: 150px;
+	background: #fff;
+}
+
+.header-info-block {
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
+.header-info a:hover {
+	color: #ff5912;
+}
+
+.header-info .e-mail, .header-info .phone{
+	font-size: 13px;
+	font-weight: 400;
+	color: #34404b;
+	display: inline-block;
+	margin: 10px;
+}
+
+.header-social{
+	margin-top: 10px;
+}
+
+.header-social a {
+	display: inline-block;
+	margin: 10px;
+}
+
+.header-social a:hover {
+	color: #ff5912;
+}
+
+.site-header a {
+	text-decoration: none;
+	color: #34404b;
+}
+
+.header-line {
+/*	min-height: 60px;*/
+	border-bottom: 1px solid #edeff1;
+}
+
+.main-logo {
+	margin-top: 30px;
+}
+
+.main-logo ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main-nav li {
+	float: left;
+	list-style: none;
+	margin: 22px 15px;
+}
+
+.main-nav a:hover {
+	color: #ff5912;
+	text-decoration: none;
+}
+
+.main-nav .active a {
+	color: #ff5912;
+}
+
+.ico-line {
+	margin-top: 10px;
+    float: right;
+}
+
+.ico-line table tr td {
+    padding: 0 5px;
+}
+
+.cart {
+	position: relative;
+}
+
+.ico-line a div.cart-count {
+	display: block;
+    width: 16px;
+    height: 16px;
+    background: #34404b;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    margin: 0 5px;
+}
