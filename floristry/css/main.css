@@ -1,0 +1,201 @@
+/* Спецификация */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+}
+
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 5pt;
+	color: #727272;
+}
+
+.bg-blur {
+	-webkit-backdrop-filter: blur(10px);
+	        backdrop-filter: blur(10px);
+}
+
+/* header */
+
+.header .logo {
+	font-family: 'Kaushan Script', cursive;
+    font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 1px 1px 5px #5C5C5C, 0 0 3px black;
+}
+
+.header nav a {
+	font-family: 'Sintony', sans-serif;
+	color: #fff;
+	font-weight: 700;
+    font-size: 14px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 5px #5C5C5C, 0 0 3px black;
+}
+
+.btn_check {
+	background-color: #FDC0AE;
+	color: #727272;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn_check:hover {
+	color: #fff;
+	-webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+	background-color: #FD9C88;
+}
+
+
+/* main */
+
+.main {
+	background: url("../img/main.jpg") no-repeat center center;
+}
+
+.title {
+	padding: 330px 0;
+	text-align: center;
+}
+
+.title__heading {
+	font-size: 72px;
+	color: #fff;
+	text-shadow: 1px 1px 10px black, 0 0 1em black;
+}
+
+.title__desc {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 40px;
+	color: #fff;
+	margin-top: -15px;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.title__desc span {
+	color: #FDB099;
+	font-weight: 800;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.btn_main {
+	height: 40px;
+	width: 250px;
+	background-color: #FD8067;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.btn_main:hover {
+	color: #f4f4f4;
+	-webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+	background-color: #FD6A4C;
+}
+
+/* about-course */
+
+.aboutCourse {
+	background-color: bisque;
+/*	background: url(../img/Group.png) no-repeat center left;*/
+	min-height: 200px;
+	text-align: left;
+}
+
+.aboutCourse__img img {
+	margin: 160px 0;
+	width: 100%;
+	height: auto;
+}
+
+.aboutCourse__text {
+	margin-top: 160px;
+	color: #727272;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.aboutCourse__text h3 {
+	font-size: 32px;
+	line-height: 28px;
+}
+
+.aboutCourse__text img {
+	margin-top: -10px;
+	margin-right: 45px;
+}
+
+.aboutCourse__text p {
+	margin-top: 40px;
+	
+}
+
+
+/* forWhom */
+
+.forWhom {
+	min-height: 900px;
+	background: url(../img/forWhom.jpg) no-repeat top center;
+	background-size: contain;
+}
+
+.forWhom h3 {
+	margin-top: 300px;
+	font-size: 38px;
+	color: #fff;
+	text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.65);
+}
+
+.cardBody {
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 2px 5px 4px rgba(114, 114, 114, 0.35);
+	min-height: 450px;
+	margin-top: 120px;
+	padding: 50px 30px 0;
+}
+
+.cardBody img {
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin-bottom: 50px;
+}
+
+.cardBody p {
+	color: #727272;
+	font-size: 22px;
+	margin-bottom: 160px;
+}
+
+/* prog */
+
+.prog {
+	min-height: 1200px;
+}
+
+
+
+
+
+
