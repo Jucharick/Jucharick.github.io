@@ -1,0 +1,94 @@
+body {
+  font-family: 'Fira Sans';
+}
+h1 {
+  font-size: 55px;
+  line-height: 240px;
+  font-family: 'Anonymous Pro';
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  width: 630px;
+  margin: 46px auto 0px;
+}
+.rules {
+  width: 910px;
+  margin: 90px auto 0;
+}
+.header {
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  background-image: url(https://pictures.s3.yandex.net/background.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 120px;
+}
+.card {
+  width: 420px;
+  min-height: 420px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 65px;
+}
+.image {
+  width: 420px;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+.module {
+  width: 420px;
+  height: 420px;
+  border-width: 5px; 
+  border-style: solid; 
+  border-color: #ff3333;
+  background-image: url(https://pictures.s3.yandex.net/grid.jpg);
+}
+.near {
+  background-image: url(https://pictures.s3.yandex.net/proximity.jpg);
+}
+.fonts {
+  background-image: url(https://pictures.s3.yandex.net/type.jpg);
+}
+.colors {
+  background-image: url(https://pictures.s3.yandex.net/color.jpg);
+}
+.module-card {
+  margin-right: 0;
+}
+.colors-card {
+  margin-right: 0;
+}
+.card h3 {
+  font-size: 35px;
+  font-family: Anonymous Pro;
+  font-weight: bold;
+  margin: 44 44 30;
+}
+.card p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 90px;
+}
+.footer {
+  height: 100px;
+  background-color: #000;
+  box-sizing: border-box;     
+  padding-top: 30px;
+}
+.logo {
+  width: 148px;
+  height: 38px;
+  background-image: url(https://pictures.s3.yandex.net/logotype.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
