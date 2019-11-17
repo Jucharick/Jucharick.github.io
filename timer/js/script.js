@@ -96,7 +96,7 @@ function get_timer() {
 		setTimeout(get_timer,1000);
 	}
 	else {
-		$("#clock").html("<span id='stop'>Îòñ÷åò çàêîí÷åí!!!</span>");
+		$("#clock").html("<span id='stop'>Акция завершена!</span>");
 	}
 	
 }
