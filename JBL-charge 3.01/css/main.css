@@ -1,5 +1,7 @@
 /* Спецификация */
-
+html { 
+	overflow-x: hidden; 
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
