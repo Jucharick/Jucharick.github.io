@@ -2,9 +2,9 @@ $(document).ready(function () {
 
 function get_timer() {
 	
-	var date_new = "December 31,2019 23:59";
+// 	var date_new = "December 31,2019 23:59";
 
-	var date_t = new Date(date_new);
+	var date_t = new Date(2019,11,31,23,59,59);
 	var date = new Date();
 
 	var timer = date_t - date;
@@ -96,7 +96,7 @@ function get_timer() {
 		setTimeout(get_timer,1000);
 	}
 	else {
-		$("#clock").html("<span id='stop'>Отсчет закончен!!!</span>");
+		$("#clock").html("<span id='stop'>ГЋГІГ±Г·ГҐГІ Г§Г ГЄГ®Г­Г·ГҐГ­!!!</span>");
 	}
 	
 }
