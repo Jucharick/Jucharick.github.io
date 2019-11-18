@@ -1,7 +1,5 @@
 /* Спецификация */
-html { 
-	overflow-x: hidden; 
-}
+html { overflow-x: hidden; }
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -303,6 +301,8 @@ header a:hover {
 .contact .map {
 	margin: 40px 0 80px;
 	position: relative;
+	height: 85%;
+	width: 100%;
 }
 
 .mail, .phone, .address {
@@ -628,6 +628,9 @@ div.scrollup:hover {
 	    font-size: 1em;
 	    line-height: 1.5em;
 	}
+	.contact h3 {
+	    font-size: 2em;
+	}
 	.time {
 		display: none;
 	}
@@ -638,6 +641,43 @@ div.scrollup:hover {
     .mail h5, .phone h5, .address h5 {
     	font-size: 1em;
     }
+    .contact .map {
+		height: 80%;
+		margin: 3% 0 6%;
+	}
+	.feedback h3 {
+	    font-size: 2em;
+	}
+	footer {
+	    min-height: 40%;
+	    padding-top: 5%;
+	}
+	footer p {
+	    font-size: 0.9em;
+	}
+	footer ul li {
+	    margin: 0px 1% 0;
+	    font-size: 0.7em;
+	}
+}
+@media screen and (max-width: 767px) {
+	nav {
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: -ms-flex;
+	    display: -o-flex;
+	    display: flex;
+	}
+	nav a {
+	    font-size: 0.7em;
+	    line-height: 3.7em;
+	}
+	.main-nav a:not(:last-child) {
+	    margin-right: 9%;
+	}
+	.main-btn a {
+	    font-size: 1em;
+	}
 }
 @media screen and (max-width: 720px) {
 	.timer {
