@@ -679,6 +679,13 @@ div.scrollup:hover {
 	.main-btn a {
 	    font-size: 1em;
 	}
+
+	ul, li {
+	    font-size: 0.9em;
+	}
+	footer p {
+	    font-size: 0.7em;
+	}
 }
 @media screen and (max-width: 720px) {
 	.timer {
@@ -693,6 +700,10 @@ div.scrollup:hover {
 	.property {
 	    width: 76%;
 	    margin-left: 15%;
+	}
+	.serv p {
+	    font-size: 0.7em;
+	    margin-top: 10%;
 	}
 	.contact h3 {
 	    font-size: 1.5em;
@@ -709,4 +720,91 @@ div.scrollup:hover {
 	.form-btn {
 		margin-left: 30%
 	}
+}
+@media screen and (max-width: 640px) {
+	.main-title h1 {
+	    font-size: 2.5em;
+	}
+	.timer {
+	    margin-left: 10%;
+	}
+	.main-p p {
+	    margin-left: 10%;
+	}
+	.price {
+	    margin: 2% 0 3% 10%;
+	}
+	.property {
+	    display: none!important;
+	}
+	.serv img {
+	    width: 20%;
+	}
+	.serv p {
+	    margin-top: 4%;
+	}
+	.action h3 {
+	    font-size: 1.5em;
+	}
+	.conditions {
+	    margin-top: 1%;
+	    font-size: 0.5em;
+	}
+	.present h5 {
+	    margin-top: 1%;
+	}
+	.present p {
+	    font-size: 0.5em;
+	    margin-bottom: 2%;
+	}
+	.conditions ol {
+	    margin-bottom: 2%;
+	}
+}
+@media screen and (max-width: 540px) {
+	.main-title h3 {
+	    display: none;
+	}
+	.timer {
+	    margin-left: 2%;
+	}
+	.main-p p {
+	    margin-left: 2%;
+	}
+	.price {
+	    margin: 2% 0 3% 2%;
+	}
+	.newprice {
+	    width: 40%;
+	    margin-left: 10%;
+	}
+	.newprice p {
+	    font-size: 1em;
+	    line-height: 2.5em;
+	}
+	.serv img {
+	    width: 10%;
+	}
+	.form-btn {
+    	width: 35%;
+    	font-size: 1.2em;
+    	margin-left: 33%
+    }
+}
+@media screen and (max-width: 523px) {
+	nav {
+		display: none;
+	}
+	.form-btn {
+    	font-size: 1em;
+    	margin-left: 33%
+    }
+}
+@media screen and (max-width: 400px) {
+	.main-btn {
+    	width: 40%;
+    }
+	.form-btn {
+    	font-size: 0.7em;
+    }
 }
