@@ -684,7 +684,9 @@ div.scrollup:hover {
 	.main-btn a {
 	    font-size: 1em;
 	}
-
+	h1, h3 {
+		margin-left: 15%;
+	}
 	ul, li {
 	    font-size: 0.9em;
 	}
@@ -693,6 +695,9 @@ div.scrollup:hover {
 	}
 }
 @media screen and (max-width: 720px) {
+	h1, h3 {
+		margin-left: 10%;
+	}
 	.timer {
 		margin-left: 15%;
 	}
@@ -729,6 +734,7 @@ div.scrollup:hover {
 @media screen and (max-width: 640px) {
 	.main-title h1 {
 	    font-size: 2.5em;
+		margin-left: 2%;
 	}
 	.timer {
 	    margin-left: 10%;
