@@ -480,6 +480,7 @@ div.scrollup:hover {
 @media screen and (max-width: 1198px) {
 	h3 {
 		font-size: 2em;
+		margin-left: 5%;
 	}
 	.main {
 	    min-height: 100%;
@@ -489,11 +490,13 @@ div.scrollup:hover {
 	}
 	.main-title h1 {
 	    font-size: 4em;
+		margin-left: 5%;
 	}
 	.main-p p {
 		font-size: 1em;
 		line-height: 1em;
 		margin-bottom: 1%;
+		margin-left: 5%;
 	}
 	.price {
 	    margin: 10% 0 5%;
@@ -578,7 +581,7 @@ div.scrollup:hover {
 }
 @media screen and (max-width: 991px) {
 	h1, h3 {
-		margin-left: 20%;
+		margin-left: 5%;
 	}
 	header .logo {
 		font-size: 2em;
@@ -609,14 +612,14 @@ div.scrollup:hover {
 	    margin-top: 1%;
 	}
 	.timer {
-		margin-left: 20%;
+		margin-left: 5%;
 		margin-top: 30px;
 	}
 	.main-p p {
-	    margin-left: 20%;
+	    margin-left: 5%;
 	}
 	.price {
-	    margin: 3% 0 3% 20%;
+	    margin: 3% 0 3% 5%;
 	}
 	.property {
 	    display: none!important;
@@ -684,9 +687,6 @@ div.scrollup:hover {
 	.main-btn a {
 	    font-size: 1em;
 	}
-	h1, h3 {
-		margin-left: 15%;
-	}
 	ul, li {
 	    font-size: 0.9em;
 	}
@@ -695,17 +695,8 @@ div.scrollup:hover {
 	}
 }
 @media screen and (max-width: 720px) {
-	h1, h3 {
-		margin-left: 10%;
-	}
-	.timer {
-		margin-left: 15%;
-	}
-	.main-p p {
-	    margin-left: 15%;
-	}
-	.price {
-	    margin: 3% 0 3% 15%;
+	.main-title h3 {
+	    display: none;
 	}
 	.property {
 	    width: 76%;
@@ -734,16 +725,6 @@ div.scrollup:hover {
 @media screen and (max-width: 640px) {
 	.main-title h1 {
 	    font-size: 2.5em;
-		margin-left: 2%;
-	}
-	.timer {
-	    margin-left: 10%;
-	}
-	.main-p p {
-	    margin-left: 10%;
-	}
-	.price {
-	    margin: 2% 0 3% 10%;
 	}
 	.serv img {
 	    width: 20%;
@@ -770,18 +751,6 @@ div.scrollup:hover {
 	}
 }
 @media screen and (max-width: 540px) {
-	.main-title h3 {
-	    display: none;
-	}
-	.timer {
-	    margin-left: 2%;
-	}
-	.main-p p {
-	    margin-left: 2%;
-	}
-	.price {
-	    margin: 2% 0 3% 2%;
-	}
 	.newprice {
 	    width: 50%;
 	    margin-left: 2%;
