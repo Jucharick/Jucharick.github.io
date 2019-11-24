@@ -619,8 +619,7 @@ div.scrollup:hover {
 	    margin: 3% 0 3% 20%;
 	}
 	.property {
-	    width: 50%;
-	    margin-left: 18%;
+	    display: none!important;
 	}
 	.about-us {
 	    min-height: 220px;
@@ -739,9 +738,6 @@ div.scrollup:hover {
 	}
 	.price {
 	    margin: 2% 0 3% 10%;
-	}
-	.property {
-	    display: none!important;
 	}
 	.serv img {
 	    width: 20%;
