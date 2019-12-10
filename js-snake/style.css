@@ -1,0 +1,25 @@
+body {
+    margin: 0 auto;
+}
+
+.main .line {
+    clear: both;
+}
+.main .line div {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 1px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color .4s;
+}
+.main .line div.s {
+    background-color: pink;
+    transition: background-color .4s;
+}
+.main .line div.f {
+    background-color: #5eba02;
+    transition: background-color 2s;
+}
