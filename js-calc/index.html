@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="calc">
+		<input id="counter" type="text" value="0">
+		<div class="button">
+			<button onclick="addDot()">.</button>
+			<button onclick="addNum(0)">0</button>
+			<button onclick="showResult()">=</button>
+			<button onclick="setOperator('+')">+</button>
+			<button onclick="addNum(1)">1</button>
+			<button onclick="addNum(2)">2</button>
+			<button onclick="addNum(3)">3</button>
+			<button onclick="setOperator('-')">-</button>
+			<button onclick="addNum(4)">4</button>
+			<button onclick="addNum(5)">5</button>
+			<button onclick="addNum(6)">6</button>
+			<button onclick="setOperator('*')">*</button>
+			<button onclick="addNum(7)">7</button>
+			<button onclick="addNum(8)">8</button>
+			<button onclick="addNum(9)">9</button>
+			<button onclick="setOperator('/')">/</button>
+			<button onclick="setOperator('%')">%</button>
+			<button onclick="addMinus()">+/-</button>
+			<button onclick="del()">&lArr;</button>
+			<button onclick="reset()">C</button><sup>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+	
+</body> 
+</html>
+
