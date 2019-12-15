@@ -237,6 +237,10 @@ h5 {
 	margin-top: 10%;
 }
 
+.site-bar__ad img {
+	min-width: 80%;
+}
+
 /*goods-catalog*/
 .goods-catalog {
 	display: -webkit-flex;
@@ -246,8 +250,37 @@ h5 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 70%;
-	font-size: 13px;
+	font-size: 0.8em;
 }
+
+.goods-catalog form {
+	width: 100%;
+	margin: 0 0 1% 1%;
+}
+
+.goods-catalog form .searh {
+	width: 72%;
+	height: 90%;
+	margin: 0 2% 1% 0;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border: none;
+	padding: 0 2%; 
+	font-size: 15px;
+}
+
+.goods-catalog form .searh-btn {
+	width: 23%;
+	padding: 0.9% 0;
+	font-size: 15px;
+	font-weight: bold;
+	background: #C6DEDD;
+	color: #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	border: none;
+}
+
 
 .goods-card {
 	margin: 0 1% 1%;
@@ -270,7 +303,7 @@ h5 {
 }
 
 .goods-card__img img {
-	max-width: 150px;
+	max-width: 100%;
 }
 
 .goods-card a {
@@ -281,7 +314,7 @@ h5 {
 .goods-name {
 	color: #43525d;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 1.2em;
 	margin-top: 20px;
 }
 
@@ -439,11 +472,3 @@ h5 {
 	padding: 1% 0;
 	font-size: 0.7em;
 }
-
-
-
-
-
-
-
-
